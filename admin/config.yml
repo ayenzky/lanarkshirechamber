@@ -114,7 +114,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Day", name: "day", widget: "day"}
               - {label: "Year", name: "year", widget: "year"}
               - {label: "Title", name: "title", widget: "string"}
-              - {label: "Content", name: "html", widget: "markdown"}
+              - {label: "Content", name: "content", widget: "markdown"}
   # - name: "technology" # Used in routes, ie.: /admin/collections/:slug/edit
   #   label: "Technology"  # Used in the UI, ie.: "New Post"
   #   folder: "technology" # The path to the folder where the documents are stored
