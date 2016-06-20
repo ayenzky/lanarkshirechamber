@@ -25,8 +25,17 @@
 					ul.nav.navbar-nav.navbar-right
 						li
 							a(href='/') Home
-						li
-							a(href='/') About Us
+						li.dropdown
+							a(href='/', class="dropdown-toggle", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") About Us <span class="caret"></span>
+							ul.dropdown-menu
+								li
+									a(href="#") Our Commitment
+								li
+									a(href="#") Chief Executives Welcome
+								li
+									a(href="#") Our Team
+								li
+									a(href="#") Membership
 						li.dropdown
 							a(href='/', class="dropdown-toggle", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") Services <span class="caret"></span>
 							ul.dropdown-menu
@@ -61,7 +70,7 @@
 											a(href="#") Training
 
 						li
-							a(href='/contact') Contact
+							a(href='/contact') Events
 						li
 							a(href='/') News
 						li

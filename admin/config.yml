@@ -78,26 +78,25 @@ collections: # A list of collections the CMS should be able to edit
   #     - {label: "Banner", name: "banner", widget: "image", class: "image featured", media_folder: "assets/img"}
   #     - {label: "Short Description", name: "shortdesc", widget: "string"}
   #     - {label: "Body", name: "body", widget: "markdown"}
-  # - name: "news" # Used in routes, ie.: /admin/collections/:slug/edit
-  #   label: "News"  # Used in the UI, ie.: "New Post"
-  #   folder: "news" # The path to the folder where the documents are stored
-  #   create: true # Allow users to create new documents in this collection
+  - name: "news" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "News"  # Used in the UI, ie.: "New Post"
+    folder: "news" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Banner", name: "banner", widget: "image", class: "image featured", media_folder: "assets/img"}
+      - {label: "Short Description", name: "shortdesc", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+    meta: # Meta data fields. Just like fields, but without any preview element
+      - {label: "Publish Date", name: "date", widget: "date"}
+  # - name: "contactus" # Used in routes, ie.: /admin/collections/:slug/edit
+  #   label: "Contact Form"  # Used in the UI, ie.: "New Post"
+  #   folder: "contact" # The path to the folder where the documents are stored
+  #   create: false # Allow users to create new documents in this collection
   #   fields: # The fields each document in this collection have
   #     - {label: "Title", name: "title", widget: "string"}
-  #     - {label: "Banner", name: "banner", widget: "image", class: "image featured", media_folder: "assets/img"}
   #     - {label: "Short Description", name: "shortdesc", widget: "string"}
   #     - {label: "Body", name: "body", widget: "markdown"}
-  #   meta: # Meta data fields. Just like fields, but without any preview element
-  #     - {label: "Publish Date", name: "date", widget: "date"}
-  #     - {label: "Categories", name: "categories", widget: "string"}
-  # # - name: "contactus" # Used in routes, ie.: /admin/collections/:slug/edit
-  # #   label: "Contact Form"  # Used in the UI, ie.: "New Post"
-  # #   folder: "contact" # The path to the folder where the documents are stored
-  # #   create: false # Allow users to create new documents in this collection
-  # #   fields: # The fields each document in this collection have
-  # #     - {label: "Title", name: "title", widget: "string"}
-  # #     - {label: "Short Description", name: "shortdesc", widget: "string"}
-  # #     - {label: "Body", name: "body", widget: "markdown"}
   - name: "events"
     label: "Events"
     files:

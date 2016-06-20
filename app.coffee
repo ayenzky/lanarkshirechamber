@@ -23,14 +23,19 @@ module.exports =
       moment(date).format(format)
 
   extensions: [
-    js_pipeline(files: 'assets/js/*.coffee'),
-    css_pipeline(files: 'assets/css/*.styl'),
+    collections(folder: 'news', layout: 'post'),
 
     records(
       events: { file: "data/events.json"}
       site: { file: "data/site.json"}
 
     ),
+
+    js_pipeline(files: 'assets/js/*.coffee'),
+    css_pipeline(files: 'assets/css/*.styl')
+
+
+
   ]
 
   stylus:
