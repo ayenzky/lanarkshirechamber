@@ -3,8 +3,9 @@ extends layout
 block content
 	div.row
 		each newss in news.orderBy('date', 'desc').slice(0, 10)
-			h2
+			h2.title
 				a(href=newss.permalink)= newss.title
+			date= dateFormat(newss.date, 'dddd, LL')
 			p
 				img.img-responsive(src=newss.banner)
 			p= newss.shortdesc
