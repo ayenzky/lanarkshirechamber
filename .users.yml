@@ -1,0 +1,5 @@
+users:
+- id: fdb098f9-01fc-4856-a41f-f45baaeffcb2
+  name: allen
+  email: allen.support@webfactories.biz
+  hash: $2a$10$jZN6N1gApL1vgioOMRLW/ebKMqRQNfNXq542.SqYMNDRGX65Gssfu
