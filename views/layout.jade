@@ -1,0 +1,42 @@
+doctype html
+html
+
+	head
+		meta(charset='utf8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+		meta(name='description', content= records.site.sitedata[0].metadesc)
+		meta(name='author', content= records.site.sitedata[0].metauthor)
+		meta(name="keywords" content= records.site.sitedata[0].metakeyword)
+		//- uncomment if your site is responsive!
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+
+		//- title= _path
+		title= records.site.sitedata[0].sitename
+		link(rel="stylesheet", href="../css/bootstrap.css" type="text/css")
+		link(rel="icon", href= records.site.sitedata[0].icon, type="image/*")
+		link(rel="shortcut icon", href= records.site.sitedata[0].icon, type="img/*")
+
+		<!-- Custom Fonts -->
+		link(href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900', rel='stylesheet', type='text/css')
+		link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+
+		<!-- Plugin CSS -->
+		link(rel="stylesheet", href="../css/animate.min.css", type="text/css")
+		link(rel="stylesheet", href="../css/component.css", type="text/css")
+		link(rel="stylesheet", href="../css/style-personal.css", type="text/css")
+
+		!= css()
+
+	body
+		include ./includes/header.jade
+
+		#main-wrapper
+			.container
+				.row
+					.col-left.col-sm-12.col-md-8
+						block content
+					.col-right.col-xs-12.col-sm-7.col-md-4
+						include ./includes/right-sidebar.jade
+
+		include ./includes/footer.jade
+

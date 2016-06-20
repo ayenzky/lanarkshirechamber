@@ -1,0 +1,22 @@
+{
+  "name": "lanarkshirechamber",
+  "description": "lanarshirechamber",
+  "dependencies": {
+    "autoprefixer-stylus": "0.9.x",
+    "axis": "0.6.x",
+    "clean-urls": "^1.1.5",
+    "coffee-script": "1.x",
+    "css-pipeline": "0.3.x",
+    "html-excerpt": "^0.1.0",
+    "jade": "1.x",
+    "js-pipeline": "0.2.x",
+    "jstransformer-marked": "1.x",
+    "marked": "0.3.x",
+    "moment": "^2.13.0",
+    "roots-collections": "^0.3.3",
+    "roots-records": "^0.5.1",
+    "rupture": "0.6.x",
+    "stylus": "0.54.x",
+    "roots": "5.0.0"
+  }
+}
