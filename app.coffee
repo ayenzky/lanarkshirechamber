@@ -7,6 +7,7 @@ records      = require 'roots-records'
 collections  = require 'roots-collections'
 excerpt      = require 'html-excerpt'
 moment       = require 'moment'
+marked       = require 'marked'
 cleanUrls    = require 'clean-urls'
 
 

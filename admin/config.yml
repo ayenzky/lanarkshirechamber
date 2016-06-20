@@ -114,7 +114,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Day", name: "day", widget: "day"}
               - {label: "Year", name: "year", widget: "year"}
               - {label: "Title", name: "title", widget: "string"}
-              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Content", name: "html", widget: "markdown"}
   # - name: "technology" # Used in routes, ie.: /admin/collections/:slug/edit
   #   label: "Technology"  # Used in the UI, ie.: "New Post"
   #   folder: "technology" # The path to the folder where the documents are stored
@@ -166,4 +166,4 @@ collections: # A list of collections the CMS should be able to edit
   #   meta: # Meta data fields. Just like fields, but without any preview element
   #     - {label: "Author", name: "author", widget: "string"}
   #     - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Categories", name: "tag", widget: "string"}
+      # - {label: "Categories", name: "tag", widget: "string"}
