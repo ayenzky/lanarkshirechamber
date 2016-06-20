@@ -3,4 +3,11 @@ extends layout
 block content
 	div.row
 		each newss in news.orderBy('date', 'desc').slice(0, 10)
-			h3= newss.title
+			h2
+				a(href=newss.permalink) newss.title
+			p
+				img(src=newss.banner)
+			p= news.shortdesc
+			p
+				a(href=newss.permalink) Read More
+
